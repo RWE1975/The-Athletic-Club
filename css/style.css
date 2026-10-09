@@ -6,6 +6,45 @@ body {
     font-variation-settings: "wdth" 100;
 }
 
+a { 
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #df0f12;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    font-family: Rakkas;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #040404;
+    color: #FFF;
+}
+
+.btnformat {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -14,16 +53,24 @@ nav {
     box-shadow: 0 4px 20.6px 0 rgba(0, 0, 0, 0.10);
 }
 
-ul.nav-links {
+@media screeen and (max-width: 900px) {
+    nav {
+        Flex-direction: column;
+        gap: 5px;
+        padding: 20px;
+    }
+}
+
+nav {
     display: flex;
     list-style: none;
     gap: 10px;
 }
 
-a {
-    text-decoration: none;
+ul.nav-links li {
+  text-decoration: none;
     color: #000;
-}
+}  
 
 h1 {
     font-family: "Playfair", serif;
@@ -38,6 +85,12 @@ h1 {
     line-height: 96.36%; /* 72.27px */
 }
 
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 40px;
+        line-height: 96.36%; /* 72.27px */
+    }
+}
 p {
     color: rgba(0, 0, 0, 0.66);
     text-align: center;
